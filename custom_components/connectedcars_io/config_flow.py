@@ -20,7 +20,7 @@ AUTH_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_EMAIL): cv.string,
         vol.Required(CONF_PASSWORD): cv.string,
-        vol.Required("namespace", default="minvolkswagen"): cv.string,
+        vol.Required("namespace", default="vwaustralia:app"): cv.string,
     }
 )
 

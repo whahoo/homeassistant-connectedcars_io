@@ -25,8 +25,8 @@ class MinVW:
         self._email = email
         self._password = password
         self._namespace = namespace
-        self._base_url_auth = "https://auth-api.connectedcars.io/"
-        self._base_url_graph = "https://api.connectedcars.io/"
+        self._base_url_auth = "https://auth-api.au1.connectedcars.io/"
+        self._base_url_graph = "https://api.au1.connectedcars.io/"
         self._accesstoken = None
         self._at_expires = None
         self._data = None
@@ -54,8 +54,8 @@ class MinVW:
                 headers = {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
-                    "x-organization-namespace": f"semler:{self._namespace}",
-                    "User-Agent": "ConnectedCars/360 CFNetwork/978.0.7 Darwin/18.7.0",
+                    "x-organization-namespace": f"{self._namespace}",
+                    "User-Agent": "ConnectedCars/29402459 CFNetwork/3860.300.31 Darwin/25.2.0",
                     "Authorization": f"Bearer {await self._get_access_token()}",
                 }
 
@@ -743,8 +743,8 @@ vehicle(id: %s) {
                 headers = {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
-                    "x-organization-namespace": f"semler:{self._namespace}",
-                    "User-Agent": "ConnectedCars/360 CFNetwork/978.0.7 Darwin/18.7.0",
+                    "x-organization-namespace": f"{self._namespace}",
+                    "User-Agent": "ConnectedCars/29402459 CFNetwork/3860.300.31 Darwin/25.2.0",
                     "Authorization": f"Bearer {await self._get_access_token()}",
                 }
 
@@ -803,8 +803,8 @@ vehicle(id: %s) {
             headers = {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-                "x-organization-namespace": f"semler:{self._namespace}",
-                "User-Agent": "ConnectedCars/360 CFNetwork/978.0.7 Darwin/18.7.0",
+                "x-organization-namespace": f"{self._namespace}",
+                "User-Agent": "ConnectedCars/29402459 CFNetwork/3860.300.31 Darwin/25.2.0",
             }
             body = {"email": self._email, "password": self._password}
 

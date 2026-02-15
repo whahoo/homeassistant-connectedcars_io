@@ -1,47 +1,45 @@
 {
-    "config": {
-        "error": {
-            "auth": "Authentication failed.",
-            "email": "Email is unknown for this namespace.",
-            "pw": "Incorrect password.",
-            "ns": "Namespace could not be found."
-        },
-        "step": {
-            "user": {
-                "data": {
-                    "email": "Email",
-                    "password": "Password",
-                    "namespace": "Namespace"
-                },
-                "description": "Enter credentials.\n\nKnown namespaces: minvolkswagen, minskoda, minseat, mitaudi",
-                "title": "Authentication"
-            }
-        }
+  "config": {
+    "error": {
+      "auth": "Authentication failed.",
+      "email": "Email is unknown for this namespace.",
+      "pw": "Incorrect password.",
+      "ns": "Namespace could not be found."
     },
-
-    "options": {
-        "error": {
+    "step": {
+      "user": {
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "namespace": "Namespace"
         },
-        "step": {
-            "init": {
-                "data": {
-                    "health_sensitivity": "Choose sensitivity threshold of health sensor:"
-                },
-                "description": "",
-                "title": "Options"
-            }
-        }
-    },
-
-    "selector": {
-        "health_sensitivity": {
-            "options": {
-                "high": "High: Engine lamp and high severity error codes",
-                "medium": "Medium: Any lamp, medium severity error codes and poor battery",
-                "low": "Low: Any lamp, any error codes and poor battery",
-                "all": "Any: Any indication"
-            }
-        }
+        "description": "Enter credentials.\n\nKnown namespaces: vwaustralia:app",
+        "title": "Authentication"
+      }
     }
+  },
 
+  "options": {
+    "error": {},
+    "step": {
+      "init": {
+        "data": {
+          "health_sensitivity": "Choose sensitivity threshold of health sensor:"
+        },
+        "description": "",
+        "title": "Options"
+      }
+    }
+  },
+
+  "selector": {
+    "health_sensitivity": {
+      "options": {
+        "high": "High: Engine lamp and high severity error codes",
+        "medium": "Medium: Any lamp, medium severity error codes and poor battery",
+        "low": "Low: Any lamp, any error codes and poor battery",
+        "all": "Any: Any indication"
+      }
+    }
+  }
 }
